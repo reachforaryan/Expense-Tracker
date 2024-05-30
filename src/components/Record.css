@@ -1,0 +1,179 @@
+#body {
+  z-index: 999;
+}
+
+.top{
+  width: 100%;
+}
+.record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 25px;
+  color: white;
+  height: 60vh;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #131313;
+  border: 2px solid rgba(255, 255, 255, 0.334);
+  border-radius: 20px;
+  height: 100%;
+  margin: 20px;
+}
+
+.form h1 {
+  background-color: #131313;
+}
+
+.form h2 {
+  background-color: #131313;
+  margin: 40px 0 40px 0;
+}
+
+#trans-form {
+  height: 80%;
+  width: 70%;
+  background-color: #131313;
+}
+
+#trans-form div,
+label,
+input,
+select,
+option {
+  background-color: #131313;
+}
+
+#trans-form div input,
+select {
+  border: 1px solid gray;
+}
+
+#trans-form div {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trans-form .button {
+  justify-content: center;
+}
+
+#trans-form .button button {
+  color: white;
+  font-weight: bold;
+  background-color: #131313;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#trans-form .button button:hover {
+  background-color: #66FF00;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+#trans-form div input,
+select,
+option {
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+}
+
+#trans-form input[type="radio"] {
+  appearance: none;
+  background-color: #131313;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+#trans-form input[type="radio"]:checked {
+  background-color: white;
+}
+
+.list {
+  flex: 2;
+  background-color: #131313;
+  border: 2px solid rgba(255, 255, 255, 0.334);
+  border-radius: 20px;
+  height: 100%;
+  margin: 20px;
+}
+
+.list h2 {
+  background-color: #131313;
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+
+#transaction_list {
+  background-color: #131313;
+}
+
+#list_of_transactions {
+  width: 100%;
+}
+
+#list_of_transactions p {
+  background-color: #131313;
+  margin: 0;
+  padding: 10px 0 0 20px;
+
+}
+
+.totals{
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  *{
+    text-align: center;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .record{
+    height: auto;
+  }
+  .record{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form,
+  .list {
+    width: 50%;
+    margin: 10px;
+  }
+
+  #trans-form,
+  .list {
+    width: 50%;
+  }
+
+  #trans-form div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #trans-form div input,
+  select,
+  option {
+    width: 100%;
+  }
+}
